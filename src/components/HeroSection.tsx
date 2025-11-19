@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const codeLines = [
-  { text: 'const website = new PATAWebService();', delay: 0 },
-  { text: 'website.design({ style: "modern" });', delay: 800 },
-  { text: 'website.develop({ tech: "cutting-edge" });', delay: 1600 },
-  { text: 'website.deploy({ performance: "optimized" });', delay: 2400 },
-  { text: 'return website.success();', delay: 3200 },
+  { text: 'const website = new PATA Web Services();', delay: 0 },
+  { text: 'website.design({ style: "modern" });', delay: 1000 },
+  { text: 'website.develop({ tech: "cutting-edge" });', delay: 2000 },
+  { text: 'website.deploy({ performance: "optimized" });', delay: 3000 },
+  { text: 'return website.success();', delay: 4000 },
 ];
 
 export default function HeroSection() {
@@ -33,11 +33,11 @@ export default function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                Craft Digital
-                <span className="block text-amber-500">Excellence</span>
+                Your Thoughts
+                <span className="block text-amber-500">Into Reality</span>
               </h1>
               <p className="text-xl text-gray-400 leading-relaxed">
-                Transform your vision into stunning web experiences. We build websites that captivate, engage, and convert.
+                Transform your vision into stunning web experiences. We build websites that captivate, engage, and drive results.
               </p>
             </div>
 
@@ -46,18 +46,20 @@ export default function HeroSection() {
                 Start Your Project
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
               </button>
+              <a href="#portfolio">
               <button className="border border-gray-700 hover:border-amber-500 text-white px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:bg-amber-500/10">
                 View Our Work
               </button>
+              </a>
             </div>
 
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-800">
               <div>
-                <div className="text-3xl font-bold text-amber-500">150+</div>
-                <div className="text-sm text-gray-400">Projects Delivered</div>
+                <div className="text-3xl font-bold text-amber-500">$10,000+</div>
+                <div className="text-sm text-gray-400">Made by Clients</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-amber-500">98%</div>
+                <div className="text-3xl font-bold text-amber-500">100%</div>
                 <div className="text-sm text-gray-400">Client Satisfaction</div>
               </div>
               <div>
@@ -75,7 +77,7 @@ export default function HeroSection() {
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                   <div className="w-3 h-3 rounded-full bg-green-500"></div>
                 </div>
-                <div className="text-xs text-gray-400 ml-4">website-builder.js</div>
+                <div className="text-xs text-gray-400 ml-4">website-builder.jsx</div>
               </div>
 
               <div className="p-6 font-mono text-sm space-y-3 min-h-[300px]">
