@@ -17,7 +17,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <span className="text-2xl font-bold text-white tracking-tight">
-              PATA<span className="text-amber-500"> Web Services</span>
+              PATA<span className="text-amber-500"> Digital Solutions</span>
             </span>
           </div>
 
