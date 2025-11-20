@@ -16,12 +16,9 @@ export default function AboutSection() {
           </p>
         </div>
 
-        {/* Content */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left column – two image boxes */}
           <div className="grid gap-6">
             <div className="relative h-56 sm:h-64 rounded-2xl overflow-hidden bg-gray-800 border border-gray-700">
-              {/* Replace src with your own image */}
               <img
                 src="myapp/public/patateam.png"
                 alt="Pata Digital team collaborating"
@@ -39,7 +36,6 @@ export default function AboutSection() {
             </div>
 
             <div className="relative h-56 sm:h-64 rounded-2xl overflow-hidden bg-gray-800 border border-gray-700 lg:translate-x-6">
-              {/* Replace src with your own image */}
               <img
                 src="myapp/public/teamworking.png"
                 alt="Modern workspace and design process"
@@ -57,7 +53,6 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Right column – intro + titles + stats */}
           <div className="space-y-6">
             <p className="text-sm uppercase tracking-[0.2em] text-amber-400">
               Digital development & Performance Tracking
@@ -75,7 +70,6 @@ export default function AboutSection() {
               refining the details that turn a good website into a great one.
             </p>
 
-            {/* Titles / focus areas */}
             <div className="mt-4">
               <p className="text-sm font-semibold text-gray-400 mb-3">
                 What we specialize in
