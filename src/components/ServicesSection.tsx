@@ -24,7 +24,7 @@ const services = [
     icon: MessageSquareText,
     title: 'AI Chatbot',
     description:
-      'Smart, Quick, and Efficient AI Chatbots that answer customer inquires at all times.',
+      'Smart, quick, and efficient AI chatbots that answer customer inquires at all times.',
     details:
       'AI tools have changed how businesses operate. Adding an AI chatbot to your website reduces the time you spend answering routine questions and gives customers instant support at any hour. It improves efficiency, increases engagement, and creates a smoother experience for anyone who interacts with your business.',
     color: 'green',
