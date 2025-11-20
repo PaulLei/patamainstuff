@@ -3,10 +3,10 @@ import { ArrowRight } from 'lucide-react';
 
 const codeLines = [
   { text: 'const website = new PATA Web Services();', delay: 0 },
-  { text: 'website.design({ style: "modern" });', delay: 1000 },
-  { text: 'website.develop({ tech: "cutting-edge" });', delay: 2000 },
-  { text: 'website.deploy({ performance: "optimized" });', delay: 3000 },
-  { text: 'return website.success();', delay: 4000 },
+  { text: 'website.design({ style: "modern" });', delay: 600 },
+  { text: 'website.develop({ tech: "cutting-edge" });', delay: 1200 },
+  { text: 'website.deploy({ performance: "optimized" });', delay: 2400 },
+  { text: 'return website.success();', delay: 3500 },
 ];
 
 export default function HeroSection() {

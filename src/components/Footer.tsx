@@ -87,7 +87,7 @@ export default function Footer() {
             Made by PATA Digital Solutions
           </p>
           <p className="text-gray-400 text-sm">
-            {currentYear} PATA Web Services. All rights reserved.
+            {currentYear} PATA Digital Solutions. All rights reserved.
           </p>
         </div>
       </div>
