@@ -18,7 +18,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
             <img 
-              src="/myapp/public/patalogotransparent.png"
+              src="/patalogotransparent.png"
               alt="PATA logo"
               className="h-10 w-10 object-contain"
             />
