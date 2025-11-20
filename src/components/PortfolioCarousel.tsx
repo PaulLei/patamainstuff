@@ -23,8 +23,8 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: 'Main Website',
-    category: 'Web Design',
+    title: 'Pata Main Website',
+    category: 'Web Development',
     description: 'Professional and Interactive website that serves as a marketing tool for potential clients.',
     image: 'myapp/public/patalogwhite.png',
     tags: ['React.js', 'SEO Optimization'],
@@ -33,7 +33,7 @@ const projects: Project[] = [
   {
     id: 3,
     title: 'ACE Chemistry Tutoring',
-    category: 'Web Development',
+    category: 'Web Design',
     description: 'Modern website that advertises tutoring and presents class information in clear format.',
     image: 'https://www.acechemistrytutoring.academy/acelogo.jpeg',
     tags: ['React.js', 'Vite', 'Accessibility'],
