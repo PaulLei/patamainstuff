@@ -26,7 +26,7 @@ const projects: Project[] = [
     title: 'Pata Main Website',
     category: 'Web Development',
     description: 'Professional and Interactive website that serves as a marketing tool for potential clients.',
-    image: 'myapp/public/patalogwhite.png',
+    image: '/patalogwhite.png',
     tags: ['React.js', 'SEO Optimization'],
     link: '#',
   },
