@@ -19,7 +19,6 @@ export default function ContactSection() {
     setError(null);
 
     try {
-      // 🔴 Replace this with your actual Formspree endpoint
       const res = await fetch('https://formspree.io/f/xkgyvqbk', {
         method: 'POST',
         headers: {
@@ -73,7 +72,7 @@ export default function ContactSection() {
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Have a project in mind? We&apos;d love to hear from you. Send us a
-            message and we&apos;ll respond as soon as possible.
+            message and we&apos;ll respond as soon as possible. Don&apos;t worry, we use Formspree, so your information is safe.
           </p>
         </div>
 
@@ -128,7 +127,6 @@ export default function ContactSection() {
           </div>
 
           <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8">
-            {/* success / error messages */}
             {success && (
               <div className="mb-4 rounded-lg border border-emerald-500/40 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-200">
                 Thank you for reaching out — we&apos;ll review your message and
