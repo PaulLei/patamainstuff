@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, Send } from 'lucide-react';
 import { useState } from 'react';
 
 export default function ContactSection() {
@@ -8,12 +8,49 @@ export default function ContactSection() {
     subject: '',
     message: '',
   });
+  const [submitting, setSubmitting] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setSubmitting(true);
+    setSuccess(false);
+    setError(null);
+
+    try {
+      // 🔴 Replace this with your actual Formspree endpoint
+      const res = await fetch('https://formspree.io/f/xkgyvqbk', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) {
+        throw new Error('Failed to submit');
+      }
+
+      setSuccess(true);
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
+    } catch (err) {
+      console.error(err);
+      setError('Something went wrong. Please try again.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -21,7 +58,10 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-black text-white relative overflow-hidden">
+    <section
+      id="contact"
+      className="py-24 bg-black text-white relative overflow-hidden"
+    >
       <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-black"></div>
 
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
@@ -29,10 +69,11 @@ export default function ContactSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Let's <span className="text-amber-500">Connect</span>
+            Let&apos;s <span className="text-amber-500">Connect</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Have a project in mind? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            Have a project in mind? We&apos;d love to hear from you. Send us a
+            message and we&apos;ll respond as soon as possible.
           </p>
         </div>
 
@@ -41,63 +82,71 @@ export default function ContactSection() {
             <div>
               <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
               <p className="text-gray-400 leading-relaxed mb-8">
-                Whether you need a brand new website, want to revamp your existing site, or have questions about our services, we're here to help.
+                Whether you need a brand new website, want to revamp your
+                existing site, or have questions about our services, we&apos;re
+                here to help.
               </p>
             </div>
 
             <div className="space-y-6">
               <div className="flex items-start gap-4 group">
                 <div className="bg-amber-600/10 border border-amber-600/20 p-3 rounded-lg group-hover:bg-amber-600 group-hover:scale-110 transition-all duration-300">
-                  <Mail size={24} className="text-amber-500 group-hover:text-white" />
+                  <Mail
+                    size={24}
+                    className="text-amber-500 group-hover:text-white"
+                  />
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
-                  <a href="mailto:info@patawebservices.com" className="text-gray-400 hover:text-amber-500 transition-colors">
-                    info@patawebservices.com
+                  <a
+                    href="mailto:patadigitalservices@gmail.com"
+                    className="text-gray-400 hover:text-amber-500 transition-colors"
+                  >
+                    patadigitalservices@gmail.com
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-4 group">
                 <div className="bg-amber-600/10 border border-amber-600/20 p-3 rounded-lg group-hover:bg-amber-600 group-hover:scale-110 transition-all duration-300">
-                  <Phone size={24} className="text-amber-500 group-hover:text-white" />
+                  <Phone
+                    size={24}
+                    className="text-amber-500 group-hover:text-white"
+                  />
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Phone</h4>
-                  <a href="tel:+1234567890" className="text-gray-400 hover:text-amber-500 transition-colors">
-                    +1 (234) 567-890
+                  <a
+                    href="tel:+12489899287"
+                    className="text-gray-400 hover:text-amber-500 transition-colors"
+                  >
+                    +1 (248) 989-9287
                   </a>
                 </div>
-              </div>
-
-              <div className="flex items-start gap-4 group">
-                <div className="bg-amber-600/10 border border-amber-600/20 p-3 rounded-lg group-hover:bg-amber-600 group-hover:scale-110 transition-all duration-300">
-                  <MapPin size={24} className="text-amber-500 group-hover:text-white" />
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Location</h4>
-                  <p className="text-gray-400">
-                    123 Web Street<br />
-                    Digital City, DC 12345
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="pt-8 border-t border-gray-800">
-              <h4 className="font-semibold mb-4">Business Hours</h4>
-              <div className="space-y-2 text-gray-400">
-                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p>Saturday: 10:00 AM - 4:00 PM</p>
-                <p>Sunday: Closed</p>
               </div>
             </div>
           </div>
 
           <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8">
+            {/* success / error messages */}
+            {success && (
+              <div className="mb-4 rounded-lg border border-emerald-500/40 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-200">
+                Thank you for reaching out — we&apos;ll review your message and
+                get back to you shortly.
+              </div>
+            )}
+            {error && (
+              <div className="mb-4 rounded-lg border border-red-500/40 bg-red-500/10 px-4 py-3 text-sm text-red-200">
+                {error}
+              </div>
+            )}
+
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium mb-2"
+                >
                   Name
                 </label>
                 <input
@@ -113,7 +162,10 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium mb-2"
+                >
                   Email
                 </label>
                 <input
@@ -129,7 +181,10 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="subject"
+                  className="block text-sm font-medium mb-2"
+                >
                   Subject
                 </label>
                 <input
@@ -145,7 +200,10 @@ export default function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium mb-2"
+                >
                   Message
                 </label>
                 <textarea
@@ -162,10 +220,14 @@ export default function ContactSection() {
 
               <button
                 type="submit"
-                className="w-full bg-amber-600 hover:bg-amber-500 text-white px-6 py-4 rounded-lg font-medium transition-all duration-300 hover:shadow-xl hover:shadow-amber-500/50 flex items-center justify-center gap-2 group"
+                disabled={submitting}
+                className="w-full bg-amber-600 hover:bg-amber-500 disabled:opacity-70 disabled:cursor-wait text-white px-6 py-4 rounded-lg font-medium transition-all duration-300 hover:shadow-xl hover:shadow-amber-500/50 flex items-center justify-center gap-2 group"
               >
-                Send Message
-                <Send size={18} className="group-hover:translate-x-1 transition-transform" />
+                {submitting ? 'Sending…' : 'Send Message'}
+                <Send
+                  size={18}
+                  className="group-hover:translate-x-1 transition-transform"
+                />
               </button>
             </form>
           </div>

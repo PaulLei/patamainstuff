@@ -42,10 +42,12 @@ export default function HeroSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
+              <a href="#contact">
               <button className="group bg-amber-600 hover:bg-amber-500 text-white px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:shadow-2xl hover:shadow-amber-500/50 hover:scale-105 flex items-center justify-center gap-2">
                 Start Your Project
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
               </button>
+              </a>
               <a href="#portfolio">
               <button className="border border-gray-700 hover:border-amber-500 text-white px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:bg-amber-500/10">
                 View Our Work

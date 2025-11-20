@@ -159,9 +159,11 @@ export default function ServicesSection() {
             Let's discuss how we can bring your vision to life with our
             expertise.
           </p>
+          <a href="#contact">
           <button className="bg-amber-600 hover:bg-amber-500 text-white px-10 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:shadow-xl hover:shadow-amber-500/50 hover:scale-105">
             Schedule a Consultation
           </button>
+          </a>
         </div>
       </div>
     </section>

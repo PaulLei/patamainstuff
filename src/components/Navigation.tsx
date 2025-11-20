@@ -43,9 +43,11 @@ export default function Navigation() {
           </div>
 
           <div className="hidden md:block">
+            <a href="#contact">
             <button className="bg-amber-600 hover:bg-amber-500 text-white px-6 py-2 rounded-md text-sm font-medium transition-all duration-200 hover:shadow-lg hover:shadow-amber-500/50">
               Get Started
             </button>
+            </a>
           </div>
 
           <div className="md:hidden">

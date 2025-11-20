@@ -1,5 +1,3 @@
-import { Heart } from 'lucide-react';
-
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -25,13 +23,18 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-gray-400 hover:text-amber-500 transition-colors">
-                  Services
+                <a href="#portfolio" className="text-gray-400 hover:text-amber-500 transition-colors">
+                  Portfolio
                 </a>
               </li>
               <li>
-                <a href="#portfolio" className="text-gray-400 hover:text-amber-500 transition-colors">
-                  Portfolio
+                <a href="#about" className="text-gray-400 hover:text-amber-500 transition-colors">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="text-gray-400 hover:text-amber-500 transition-colors">
+                  Services
                 </a>
               </li>
               <li>
@@ -57,12 +60,22 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#services" className="text-gray-400 hover:text-amber-500 transition-colors">
+                  AI Chatbot
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="text-gray-400 hover:text-amber-500 transition-colors">
+                  Responsive Design
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="text-gray-400 hover:text-amber-500 transition-colors">
                   SEO Optimization
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-gray-400 hover:text-amber-500 transition-colors">
-                  Web Applications
+                  Analytics and Performance Tracking
                 </a>
               </li>
             </ul>
@@ -71,7 +84,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm flex items-center gap-2">
-            Made with <Heart size={16} className="text-amber-500 fill-amber-500" /> by PATA Web Services
+            Made by PATA Digital Solutions
           </p>
           <p className="text-gray-400 text-sm">
             {currentYear} PATA Web Services. All rights reserved.
