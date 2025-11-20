@@ -26,8 +26,8 @@ const projects: Project[] = [
     title: 'Main Website',
     category: 'Web Design',
     description: 'Professional and Interactive website that serves as a marketing tool for potential clients.',
-    image: 'https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tags: ['React.js', 'Back End Dev', 'SEO Optimization'],
+    image: 'myapp/public/patalogwhite.png',
+    tags: ['React.js', 'SEO Optimization'],
     link: '#',
   },
   {
