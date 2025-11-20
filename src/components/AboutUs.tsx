@@ -20,7 +20,7 @@ export default function AboutSection() {
           <div className="grid gap-6">
             <div className="relative h-56 sm:h-64 rounded-2xl overflow-hidden bg-gray-800 border border-gray-700">
               <img
-                src="myapp/public/patateam.png"
+                src="/patateam.png"
                 alt="Pata Digital team collaborating"
                 className="w-full h-full object-cover opacity-100"
               />
@@ -37,7 +37,7 @@ export default function AboutSection() {
 
             <div className="relative h-56 sm:h-64 rounded-2xl overflow-hidden bg-gray-800 border border-gray-700 lg:translate-x-6">
               <img
-                src="myapp/public/teamworking.png"
+                src="/teamworking.png"
                 alt="Modern workspace and design process"
                 className="w-full h-full object-cover opacity-100"
               />
