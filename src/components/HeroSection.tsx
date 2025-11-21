@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const codeLines = [
-  { text: 'const website = new PATA Web Services();', delay: 0 },
+  { text: 'const website = new PATA Digital Services();', delay: 0 },
   { text: 'website.design({ style: "modern" });', delay: 600 },
   { text: 'website.develop({ tech: "cutting-edge" });', delay: 1200 },
   { text: 'website.deploy({ performance: "optimized" });', delay: 2400 },

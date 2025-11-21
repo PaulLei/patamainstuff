@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-2">
             <h3 className="text-2xl font-bold mb-4">
-              PATA<span className="text-amber-500"> Web Services</span>
+              PATA<span className="text-amber-500"> Digital Services</span>
             </h3>
             <p className="text-gray-400 leading-relaxed mb-4">
               Creating exceptional web experiences that drive results. Your vision, our expertise.
@@ -84,10 +84,10 @@ export default function Footer() {
 
         <div className="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm flex items-center gap-2">
-            Made by PATA Digital Solutions
+            Made by PATA Digital Services
           </p>
           <p className="text-gray-400 text-sm">
-            {currentYear} PATA Digital Solutions. All rights reserved.
+            {currentYear} PATA Digital Services. All rights reserved.
           </p>
         </div>
       </div>

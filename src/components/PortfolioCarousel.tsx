@@ -23,11 +23,11 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: 'Pata Main Website',
+    title: 'Pata Digital Services',
     category: 'Web Development',
     description: 'Professional and Interactive website that serves as a marketing tool for potential clients.',
     image: '/patalogwhite.png',
-    tags: ['React.js', 'SEO Optimization'],
+    tags: ['React', 'Next.jz', 'Tailwing CSS', 'SEO Optimization'],
     link: '#',
   },
   {
@@ -41,7 +41,7 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: 'CCG Website',
+    title: 'Colts Consulting Services',
     category: 'Web Design',
     description: 'Modern website highlighting business consulting services and impact.',
     image: 'https://www.coltsccg.com/CCG%20Logo.png',

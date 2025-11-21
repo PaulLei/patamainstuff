@@ -24,7 +24,7 @@ export default function Navigation() {
             />
 
             <span className="text-2xl font-bold text-white tracking-tight">
-              PATA<span className="text-amber-500"> Digital Solutions</span>
+              PATA<span className="text-amber-500"> Digital Services</span>
             </span>
           </div>
 
