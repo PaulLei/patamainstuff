@@ -10,7 +10,8 @@ export default function Footer() {
               PATA<span className="text-amber-500"> Digital Services</span>
             </h3>
             <p className="text-gray-400 leading-relaxed mb-4">
-              Creating exceptional web experiences that drive results. Your vision, our expertise.
+              We design, build, and optimize modern websites that help small
+              businesses stand out and grow online.
             </p>
           </div>
 
@@ -24,12 +25,12 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#portfolio" className="text-gray-400 hover:text-amber-500 transition-colors">
-                  Portfolio
+                  Projects
                 </a>
               </li>
               <li>
                 <a href="#about" className="text-gray-400 hover:text-amber-500 transition-colors">
-                  About
+                  About Us
                 </a>
               </li>
               <li>
@@ -46,36 +47,36 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Services</h4>
+            <h4 className="font-semibold mb-4">Our Services</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#services" className="text-gray-400 hover:text-amber-500 transition-colors">
-                  Web Development
+                  Custom Web Development
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-gray-400 hover:text-amber-500 transition-colors">
-                  UI/UX Design
+                  UI/UX & Visual Design
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-gray-400 hover:text-amber-500 transition-colors">
-                  AI Chatbot
+                  AI Chatbot Integration
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-gray-400 hover:text-amber-500 transition-colors">
-                  Responsive Design
+                  Mobile-Responsive Design
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-gray-400 hover:text-amber-500 transition-colors">
-                  SEO Optimization
+                  On-Page SEO Setup
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-gray-400 hover:text-amber-500 transition-colors">
-                  Analytics and Performance Tracking
+                  Analytics & Performance Tracking
                 </a>
               </li>
             </ul>
@@ -84,10 +85,10 @@ export default function Footer() {
 
         <div className="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm flex items-center gap-2">
-            Made by PATA Digital Services
+            Designed & built by PATA Digital Services
           </p>
           <p className="text-gray-400 text-sm">
-            {currentYear} PATA Digital Services. All rights reserved.
+            © {currentYear} PATA Digital Services. All rights reserved.
           </p>
         </div>
       </div>

@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 
 const codeLines = [
-  { text: 'const website = new PATA Digital Services();', delay: 0 },
-  { text: 'website.design({ style: "modern" });', delay: 600 },
-  { text: 'website.develop({ tech: "cutting-edge" });', delay: 1200 },
-  { text: 'website.deploy({ performance: "optimized" });', delay: 2400 },
-  { text: 'return website.success();', delay: 3500 },
+  { text: 'const website = new PATAWebProject();', delay: 0 },
+  { text: 'website.design({ focus: "modern, clean UI" });', delay: 600 },
+  { text: 'website.brand({ style: "distinct and consistent" });', delay: 1200 },
+  { text: 'website.optimize({ seo: "search-ready" });', delay: 2400 },
+  { text: 'return website.launch({ result: "more clients" });', delay: 3500 },
 ];
 
 export default function HeroSection() {
@@ -33,40 +33,41 @@ export default function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                Your Thoughts
-                <span className="block text-amber-500">Into Reality</span>
+                Modern Websites
+                <span className="block text-amber-500">Built to Grow Your Brand</span>
               </h1>
               <p className="text-xl text-gray-400 leading-relaxed">
-                Transform your vision into stunning web experiences. We build websites that captivate, engage, and drive results.
+                We craft fast, modern websites and clear brand identities for small businesses. 
+                From design to launch, every project is built to look great, load quickly, and help you win more clients.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#contact">
-              <button className="group bg-amber-600 hover:bg-amber-500 text-white px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:shadow-2xl hover:shadow-amber-500/50 hover:scale-105 flex items-center justify-center gap-2">
-                Start Your Project
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-              </button>
+                <button className="group bg-amber-600 hover:bg-amber-500 text-white px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:shadow-2xl hover:shadow-amber-500/50 hover:scale-105 flex items-center justify-center gap-2">
+                  Start Your Project
+                  <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+                </button>
               </a>
               <a href="#portfolio">
-              <button className="border border-gray-700 hover:border-amber-500 text-white px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:bg-amber-500/10">
-                View Our Work
-              </button>
+                <button className="border border-gray-700 hover:border-amber-500 text-white px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:bg-amber-500/10">
+                  View Client Projects
+                </button>
               </a>
             </div>
 
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-800">
               <div>
-                <div className="text-3xl font-bold text-amber-500">+$10,000</div>
-                <div className="text-sm text-gray-400">When Used by Clients</div>
+                <div className="text-3xl font-bold text-amber-500">Custom-Built</div>
+                <div className="text-sm text-gray-400">Websites tailored to your business</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-amber-500">100%</div>
-                <div className="text-sm text-gray-400">Client Satisfaction</div>
+                <div className="text-3xl font-bold text-amber-500">SEO-Ready</div>
+                <div className="text-sm text-gray-400">On-page optimization from day one</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-amber-500">24/7</div>
-                <div className="text-sm text-gray-400">Support Available</div>
+                <div className="text-3xl font-bold text-amber-500">Mobile-First</div>
+                <div className="text-sm text-gray-400">Designed to work on every screen</div>
               </div>
             </div>
           </div>

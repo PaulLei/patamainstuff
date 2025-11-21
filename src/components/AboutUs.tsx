@@ -8,11 +8,11 @@ export default function AboutSection() {
         {/* Heading */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            About <span className="text-amber-500">Pata Digital Services</span>
+            About <span className="text-amber-500">PATA Digital Services</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            We craft digital experiences that look sharp, load fast, and help your
-            brand stand out in a crowded online world.
+            We design and build modern, fast websites that spotlight your brand,
+            tell your story clearly, and help you turn visitors into clients.
           </p>
         </div>
 
@@ -21,7 +21,7 @@ export default function AboutSection() {
             <div className="relative h-56 sm:h-64 rounded-2xl overflow-hidden bg-gray-800 border border-gray-700">
               <img
                 src="/patateam.png"
-                alt="Pata Digital team collaborating"
+                alt="PATA Digital Services founders collaborating on web design"
                 className="w-full h-full object-cover opacity-100"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-black/60 via-black/20 to-transparent" />
@@ -30,7 +30,7 @@ export default function AboutSection() {
                   Who We Are
                 </p>
                 <p className="text-lg font-semibold">
-                 Two students with big standards.
+                  Two student founders with professional standards.
                 </p>
               </div>
             </div>
@@ -38,7 +38,7 @@ export default function AboutSection() {
             <div className="relative h-56 sm:h-64 rounded-2xl overflow-hidden bg-gray-800 border border-gray-700 lg:translate-x-6">
               <img
                 src="/teamworking.png"
-                alt="Modern workspace and design process"
+                alt="Modern workspace showing the PATA web design process"
                 className="w-full h-full object-cover opacity-100"
               />
               <div className="absolute inset-0 bg-gradient-to-tl from-black/60 via-black/20 to-transparent" />
@@ -47,7 +47,7 @@ export default function AboutSection() {
                   How We Work
                 </p>
                 <p className="text-lg font-semibold">
-                  Focused, intentional, and detail-driven.
+                  Collaborative, detail-driven, and focused on results.
                 </p>
               </div>
             </div>
@@ -55,19 +55,20 @@ export default function AboutSection() {
 
           <div className="space-y-6">
             <p className="text-sm uppercase tracking-[0.2em] text-amber-400">
-              Digital development & Performance Tracking
+              Web Design, Branding & Performance Tracking
             </p>
 
             <p className="text-gray-300 text-lg leading-relaxed">
-              Pata Digital Services, run by Advik Tatavarthi and Paul Lei, helps businesses move beyond basic templates.
-              We blend thoughtful design, clear messaging, and modern development
-              to build sites that feel tailored to your brand and easy for your
-              audience to use.
+              PATA Digital Services, run by Advik Tatavarthi and Paul Lei, helps
+              businesses move beyond generic templates. We blend thoughtful web
+              design, clear copy, and modern development to create sites that
+              feel tailored to your brand and intuitive for your audience.
             </p>
 
             <p className="text-gray-300 text-lg leading-relaxed">
-              From first wireframe to final launch, we stay close to your goals,
-              refining the details that turn a good website into a great one.
+              From first wireframe to launch, we stay close to your goals,
+              refining the details that turn a simple website into a reliable
+              digital home for your business.
             </p>
 
             <div className="mt-4">
@@ -76,23 +77,22 @@ export default function AboutSection() {
               </p>
               <div className="flex flex-wrap gap-3">
                 <span className="px-4 py-2 rounded-full border border-gray-700 text-sm text-gray-200 bg-gray-900/60">
-                  Modern Web Design
+                  Custom Web Design & Development
                 </span>
                 <span className="px-4 py-2 rounded-full border border-gray-700 text-sm text-gray-200 bg-gray-900/60">
                   Brand-Focused Landing Pages
                 </span>
                 <span className="px-4 py-2 rounded-full border border-gray-700 text-sm text-gray-200 bg-gray-900/60">
-                  Performance & SEO
+                  SEO & Performance Optimization
                 </span>
                 <span className="px-4 py-2 rounded-full border border-gray-700 text-sm text-gray-200 bg-gray-900/60">
-                  Ongoing Support
+                  Ongoing Support & Iteration
                 </span>
               </div>
             </div>
           </div>
         </div>
 
-        
       </div>
     </section>
   );

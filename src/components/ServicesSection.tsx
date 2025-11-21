@@ -4,56 +4,56 @@ import { useState } from 'react';
 const services = [
   {
     icon: Code2,
-    title: 'Custom Web Development',
+    title: 'Custom Website Development',
     description:
-      'Tailored solutions built with cutting-edge technologies to bring your unique vision to life.',
+      'Conversion-focused websites built with modern technologies to support your business goals.',
     details:
-      'We build websites that match your vision and support your business goals. Your site reflects your brand, so we focus on clean design, strong structure, and features that serve your customers. Whether you need small updates or a full build, we handle every detail with care. Our goal is to create long-term partnerships with clients and support their growth.',
+      'We build custom websites that go beyond templates. Every page is designed to reflect your brand, highlight your services, and guide visitors toward taking action. From structure and navigation to performance and security, we handle the details so your site feels fast, reliable, and professional. Our goal is to create long-term partnerships and support your growth as your business evolves.',
     color: 'amber',
   },
   {
     icon: Palette,
-    title: 'UI/UX Design',
+    title: 'UI/UX & Visual Design',
     description:
-      'Beautiful, intuitive interfaces that captivate users and deliver seamless experiences.',
+      'Clean, modern interfaces that are easy to use and aligned with your brand identity.',
     details:
-      'We offer a wide range of UI and UX options to fit each client’s needs. If you don’t have a specific design in mind, we provide clear examples to help you explore what’s possible. We research industry leaders to understand current standards and trends, then apply those insights to your project. We design with purpose and clarity.',
+      'We research your industry, audience, and competitors to design interfaces that feel familiar but still stand out. If you don’t have a clear vision yet, we provide examples, mood boards, and layout options to help you decide. Every design choice—from typography to spacing—is intentional, so your website looks polished and feels effortless to use.',
     color: 'blue',
   },
   {
     icon: MessageSquareText,
-    title: 'AI Chatbot',
+    title: 'AI Chatbot Integration',
     description:
-      'Smart, quick, and efficient AI chatbots that answer customer inquires at all times.',
+      'Smart, always-on chatbots that answer common questions and capture new leads.',
     details:
-      'AI tools have changed how businesses operate. Adding an AI chatbot to your website reduces the time you spend answering routine questions and gives customers instant support at any hour. It improves efficiency, increases engagement, and creates a smoother experience for anyone who interacts with your business.',
+      'AI tools have changed how businesses support customers. Adding an AI chatbot to your site means visitors get instant answers, even outside business hours. We help you set up a chatbot that can handle FAQs, capture contact information, and route important messages to you—reducing repetitive work while improving the experience for your users.',
     color: 'green',
   },
   {
     icon: Smartphone,
-    title: 'Responsive Design',
+    title: 'Mobile-First Responsive Design',
     description:
-      'Perfect viewing experiences across all devices, from mobile to desktop.',
+      'Websites that look and work great on phones, tablets, and desktops.',
     details:
-      'A responsive website keeps users engaged longer, which supports higher conversions and sales. We optimize every layout for different devices so customers have a smooth experience wherever they visit from. Our design choices align with your target audience to maximize results.',
+      'Most visitors now browse on their phones. We design every page with a mobile-first mindset, then scale up for larger screens. This keeps users engaged longer and makes it easier for them to read, click, and contact you. A responsive layout supports higher conversions and creates a consistent brand experience across all devices.',
     color: 'purple',
   },
   {
     icon: Search,
-    title: 'SEO Optimization',
+    title: 'On-Page SEO Setup',
     description:
-      'Strategic optimization to boost your visibility and reach your target audience.',
+      'SEO-friendly structure, copy, and tags to help customers find you in search results.',
     details:
-      'We don’t stop at building the site. We help your business stand out. With strong SEO foundations, we improve your visibility when customers search for services in your space. Awareness is the first step in driving traffic and revenue, and we ensure your website has the tools to be found.',
+      'We layer in SEO best practices from the start. That includes clean URL structure, meaningful headings, optimized meta tags, image alt text, and keyword-aware copy. Our focus is on creating a strong foundation so your website is ready to rank when potential clients search for services in your niche or local area.',
     color: 'red',
   },
   {
-    icon: TrendingUp  ,
-    title: 'Analytics and Performance Tracking',
+    icon: TrendingUp,
+    title: 'Analytics & Performance Tracking',
     description:
-      'The first step to growth is reflection through quantitative analysis of your business.',
+      'Data and insights that show how your website is performing over time.',
     details:
-      'Understanding how users interact with your site is key to growth. We set up analytics tools that track traffic, user behavior, and conversion patterns. With this data, you can make informed decisions, refine your strategy, and improve results over time. We help you see what works, what doesn’t, and where new opportunities appear.',
+      'Understanding how people use your site is the first step toward improving it. We help you set up analytics tools that track traffic, top pages, click patterns, and conversions. With clear reports, you can see what’s working, where visitors drop off, and which changes drive better results. Our job is to make the numbers easy to understand and act on.',
     color: 'cyan',
   },
 ];
@@ -70,11 +70,11 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            What We <span className="text-amber-500">Offer</span>
+            Services <span className="text-amber-500">We Provide</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Comprehensive web solutions designed to elevate your digital presence
-            and drive real results.
+            End-to-end web design, development, and optimization to help your business
+            look professional online and turn visitors into clients.
           </p>
         </div>
 
@@ -156,13 +156,13 @@ export default function ServicesSection() {
             Ready to Start Your Project?
           </h3>
           <p className="text-gray-400 mb-8 text-lg">
-            Let's discuss how we can bring your vision to life with our
-            expertise.
+            Share your goals with us and we&apos;ll help you plan a website or landing page
+            that fits your brand, budget, and timeline.
           </p>
           <a href="#contact">
-          <button className="bg-amber-600 hover:bg-amber-500 text-white px-10 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:shadow-xl hover:shadow-amber-500/50 hover:scale-105">
-            Schedule a Consultation
-          </button>
+            <button className="bg-amber-600 hover:bg-amber-500 text-white px-10 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:shadow-xl hover:shadow-amber-500/50 hover:scale-105">
+              Schedule a Consultation
+            </button>
           </a>
         </div>
       </div>

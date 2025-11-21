@@ -15,26 +15,30 @@ const projects: Project[] = [
   {
     id: 1,
     title: 'Neurologic Solutions',
-    category: 'Web Development',
-    description: 'Modern website with clear presentation, news page, and prepared for investors.',
-    image: 'https://media.licdn.com/dms/image/v2/C4E0BAQEtB8wQ02r1pg/company-logo_200_200/company-logo_200_200/0/1633619729471?e=1765411200&v=beta&t=-5ZiKJqtXeZZYPHYHoEq3iqSWKH05QvH0coTHgpJPl4',
-    tags: ['WP Bakery', 'Responsive Design'],
+    category: 'Medical Web Design',
+    description:
+      'Custom WordPress website for a neurology practice with clear service pages, news hub, and investor-ready presentation.',
+    image:
+      'https://media.licdn.com/dms/image/v2/C4E0BAQEtB8wQ02r1pg/company-logo_200_200/company-logo_200_200/0/1633619729471?e=1765411200&v=beta&t=-5ZiKJqtXeZZYPHYHoEq3iqSWKH05QvH0coTHgpJPl4',
+    tags: ['WordPress', 'Responsive Design', 'Healthcare Website'],
     link: 'https://neurologicsolutions.net/',
   },
   {
     id: 2,
-    title: 'Pata Digital Services',
-    category: 'Web Development',
-    description: 'Professional and Interactive website that serves as a marketing tool for potential clients.',
+    title: 'PATA Digital Services',
+    category: 'Brand Website',
+    description:
+      'Our own marketing site showcasing modern web design, branding, and SEO-focused content for service-based businesses.',
     image: '/patalogwhite.png',
-    tags: ['React', 'Next.jz', 'Tailwing CSS', 'SEO Optimization'],
+    tags: ['React', 'Next.js', 'Tailwind CSS', 'SEO Optimization'],
     link: '#',
   },
   {
     id: 3,
     title: 'ACE Chemistry Tutoring',
-    category: 'Web Design',
-    description: 'Modern website that advertises tutoring and presents class information in clear format.',
+    category: 'Education Web Design',
+    description:
+      'Modern website for a tutoring academy with clear class information, calls-to-action, and streamlined contact flow.',
     image: 'https://www.acechemistrytutoring.academy/acelogo.jpeg',
     tags: ['React.js', 'Vite', 'Accessibility'],
     link: 'https://www.acechemistrytutoring.academy/',
@@ -42,19 +46,22 @@ const projects: Project[] = [
   {
     id: 4,
     title: 'Colts Consulting Services',
-    category: 'Web Design',
-    description: 'Modern website highlighting business consulting services and impact.',
+    category: 'Business Web Design',
+    description:
+      'Clean, business-focused site highlighting consulting services, value proposition, and client outcomes.',
     image: 'https://www.coltsccg.com/CCG%20Logo.png',
-    tags: ['React.js', 'Vite'],
+    tags: ['React.js', 'Vite', 'Small Business Website'],
     link: 'https://www.coltsccg.com/',
   },
   {
     id: 5,
     title: 'Troy High Performance Gym',
     category: 'In Progress',
-    description: 'Redesign of previous gym website.',
-    image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
-    tags: [],
+    description:
+      'Ongoing redesign of a local gym website focused on stronger visuals, clear membership options, and mobile-first performance.',
+    image:
+      'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
+    tags: ['Gym Website', 'Redesign', 'In Progress'],
     link: '',
   },
 ];
@@ -95,10 +102,11 @@ export default function PortfolioCarousel() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Our <span className="text-amber-500">Portfolio</span>
+            Client <span className="text-amber-500">Projects</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Explore our recent projects and see how we've helped businesses achieve their digital goals.
+            Browse a selection of websites we&apos;ve designed and built for businesses in
+            healthcare, education, consulting, and local services.
           </p>
         </div>
 
@@ -160,10 +168,12 @@ export default function PortfolioCarousel() {
                         ))}
                       </div>
 
-                      {isActive && (
+                      {isActive && project.link && (
                         <a
                           href={project.link}
                           className="inline-flex items-center gap-2 text-amber-500 hover:text-amber-400 font-medium text-sm transition-colors"
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
                           View Project
                           <ExternalLink size={16} />

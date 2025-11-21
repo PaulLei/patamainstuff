@@ -68,11 +68,11 @@ export default function ContactSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-4">
-            Let&apos;s <span className="text-amber-500">Connect</span>
+            Start Your <span className="text-amber-500">Next Website</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Have a project in mind? We&apos;d love to hear from you. Send us a
-            message and we&apos;ll respond as soon as possible. Don&apos;t worry, we use Formspree, so your information is safe.
+            Have a web design or branding project in mind? Tell us what you&apos;re
+            working on and we&apos;ll follow up with ideas, timelines, and next steps.
           </p>
         </div>
 
@@ -81,9 +81,9 @@ export default function ContactSection() {
             <div>
               <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
               <p className="text-gray-400 leading-relaxed mb-8">
-                Whether you need a brand new website, want to revamp your
-                existing site, or have questions about our services, we&apos;re
-                here to help.
+                Whether you need a brand new site, a full redesign, or a focused
+                landing page for your business, we&apos;re here to help you plan,
+                design, and launch with confidence.
               </p>
             </div>
 
@@ -103,6 +103,9 @@ export default function ContactSection() {
                   >
                     patadigitalservices@gmail.com
                   </a>
+                  <p className="text-sm text-gray-500 mt-1">
+                    Share a brief overview of your project and ideal timeline.
+                  </p>
                 </div>
               </div>
 
@@ -121,6 +124,9 @@ export default function ContactSection() {
                   >
                     +1 (248) 989-9287
                   </a>
+                  <p className="text-sm text-gray-500 mt-1">
+                    Prefer a quick call? Reach out and we&apos;ll schedule a time.
+                  </p>
                 </div>
               </div>
             </div>
@@ -129,8 +135,8 @@ export default function ContactSection() {
           <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8">
             {success && (
               <div className="mb-4 rounded-lg border border-emerald-500/40 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-200">
-                Thank you for reaching out — we&apos;ll review your message and
-                get back to you shortly.
+                Thank you for reaching out — we&apos;ve received your message and
+                will get back to you soon.
               </div>
             )}
             {error && (
@@ -155,7 +161,7 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                   className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-amber-500 transition-colors text-white"
-                  placeholder="Your name"
+                  placeholder="Your full name"
                 />
               </div>
 
@@ -174,7 +180,7 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                   className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-amber-500 transition-colors text-white"
-                  placeholder="your@email.com"
+                  placeholder="you@business.com"
                 />
               </div>
 
@@ -193,7 +199,7 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                   className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-amber-500 transition-colors text-white"
-                  placeholder="How can we help?"
+                  placeholder="Website, branding, or landing page?"
                 />
               </div>
 
@@ -212,7 +218,7 @@ export default function ContactSection() {
                   required
                   rows={5}
                   className="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:border-amber-500 transition-colors text-white resize-none"
-                  placeholder="Tell us about your project..."
+                  placeholder="Tell us about your business, goals, and any deadlines..."
                 />
               </div>
 
