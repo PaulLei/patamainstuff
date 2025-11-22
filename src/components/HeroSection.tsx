@@ -12,6 +12,7 @@ const codeLines = [
 export default function HeroSection() {
   const [visibleLines, setVisibleLines] = useState<number>(0);
 
+  // Existing typewriter effect
   useEffect(() => {
     const timers = codeLines.map((line, index) =>
       setTimeout(() => setVisibleLines(index + 1), line.delay)
@@ -19,14 +20,38 @@ export default function HeroSection() {
     return () => timers.forEach(clearTimeout);
   }, []);
 
-  return (
-    <section id="home" className="min-h-screen bg-black text-white pt-0 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-amber-900/10 via-black to-black"></div>
+  // NEW: scroll listener for parallax
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY || 0;
+      // store with px so calc() + translateY works properly
+      document.documentElement.style.setProperty('--scroll', `${scrollY}px`);
+    };
 
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-amber-600/5 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-amber-600/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-      </div>
+    window.addEventListener('scroll', handleScroll);
+    // initialize on mount so it works even if user is not at top
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <section
+      id="home"
+      className="min-h-screen text-white pt-0 relative overflow-hidden bg-cover bg-center bg-no-repeat"
+    >
+      {/* Parallax + soft blur background */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-md will-change-transform"
+        style={{
+          backgroundImage: "url('/background.jpg')",
+          // var(--scroll, 0px) has units; 0.2 controls parallax strength
+          transform: 'translateY(calc(var(--scroll, 0px) * 0.2))',
+        }}
+      ></div>
+
+      {/* Dark overlay for contrast */}
+      <div className="absolute inset-0 bg-black/50"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -36,9 +61,11 @@ export default function HeroSection() {
                 Modern Websites
                 <span className="block text-amber-500">Built to Grow Your Brand</span>
               </h1>
-              <p className="text-xl text-gray-400 leading-relaxed">
-                We craft fast, modern websites and clear brand identities for small businesses. 
-                From design to launch, every project is built to look great, load quickly, and help you win more clients.
+
+              <p className="text-xl text-gray-300 leading-relaxed">
+                We craft fast, modern websites and clear brand identities for small businesses.
+                From design to launch, every project is built to look great, load quickly,
+                and help you win more clients.
               </p>
             </div>
 
@@ -49,6 +76,7 @@ export default function HeroSection() {
                   <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
                 </button>
               </a>
+
               <a href="#portfolio">
                 <button className="border border-gray-700 hover:border-amber-500 text-white px-8 py-4 rounded-lg text-lg font-medium transition-all duration-300 hover:bg-amber-500/10">
                   View Client Projects
@@ -61,10 +89,12 @@ export default function HeroSection() {
                 <div className="text-2xl font-bold text-amber-500">Custom-Built</div>
                 <div className="text-sm text-gray-400">Websites tailored to your business</div>
               </div>
+
               <div>
                 <div className="text-2xl font-bold text-amber-500">SEO-Ready</div>
                 <div className="text-sm text-gray-400">On-page optimization from day one</div>
               </div>
+
               <div>
                 <div className="text-2xl font-bold text-amber-500">Mobile-First</div>
                 <div className="text-sm text-gray-400">Designed to work on every screen</div>
@@ -94,6 +124,7 @@ export default function HeroSection() {
                     <span className="text-green-400">{line.text}</span>
                   </div>
                 ))}
+
                 {visibleLines < codeLines.length && (
                   <div className="flex items-start">
                     <span className="text-gray-600 mr-4 select-none">{visibleLines + 1}</span>
@@ -103,7 +134,6 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {/*<div className="absolute -bottom-4 -right-4 w-32 h-32 bg-amber-600/20 rounded-lg blur-xl"></div>*/}
             <div className="absolute -top-4 -left-4 w-32 h-32 bg-amber-600/20 rounded-lg blur-xl"></div>
           </div>
         </div>
