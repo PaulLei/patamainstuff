@@ -17,10 +17,10 @@ const projects: Project[] = [
     title: 'Neurologic Solutions',
     category: 'Medical Web Design',
     description:
-      'Custom WordPress website for a neurology practice with clear service pages, news hub, and investor-ready presentation.',
+      'Custom neurology site with service pages, news hub, and investor details.',
     image:
       'https://media.licdn.com/dms/image/v2/C4E0BAQEtB8wQ02r1pg/company-logo_200_200/company-logo_200_200/0/1633619729471?e=1765411200&v=beta&t=-5ZiKJqtXeZZYPHYHoEq3iqSWKH05QvH0coTHgpJPl4',
-    tags: ['WordPress', 'Responsive Design', 'Healthcare Website'],
+    tags: ['WPBakery', 'Responsive Design', 'Healthcare Website'],
     link: 'https://neurologicsolutions.net/',
   },
   {
@@ -28,17 +28,17 @@ const projects: Project[] = [
     title: 'PATA Digital Services',
     category: 'Brand Website',
     description:
-      'Our own marketing site showcasing modern web design, branding, and SEO-focused content for service-based businesses.',
+      'Our marketing site showing modern design, branding, and SEO-focused pages.',
     image: '/patalogwhite.png',
     tags: ['React', 'Next.js', 'Tailwind CSS', 'SEO Optimization'],
-    link: '#',
+    link: 'https://www.patadigitalservices.com/',
   },
   {
     id: 3,
     title: 'ACE Chemistry Tutoring',
     category: 'Education Web Design',
     description:
-      'Modern website for a tutoring academy with clear class information, calls-to-action, and streamlined contact flow.',
+      'Tutoring site with clear class info, calls to action, and a smooth contact flow.',
     image: 'https://www.acechemistrytutoring.academy/acelogo.jpeg',
     tags: ['React.js', 'Vite', 'Accessibility'],
     link: 'https://www.acechemistrytutoring.academy/',
@@ -48,7 +48,7 @@ const projects: Project[] = [
     title: 'Colts Consulting Services',
     category: 'Business Web Design',
     description:
-      'Clean, business-focused site highlighting consulting services, value proposition, and client outcomes.',
+      'Business site featuring consulting services, value, and client outcomes.',
     image: 'https://www.coltsccg.com/CCG%20Logo.png',
     tags: ['React.js', 'Vite', 'Small Business Website'],
     link: 'https://www.coltsccg.com/',
@@ -58,7 +58,7 @@ const projects: Project[] = [
     title: 'Troy High Performance Gym',
     category: 'In Progress',
     description:
-      'Ongoing redesign of a local gym website focused on stronger visuals, clear membership options, and mobile-first performance.',
+      'Gym website redesign with better visuals, clear plans, and mobile-first layout.',
     image:
       'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
     tags: ['Gym Website', 'Redesign', 'In Progress'],

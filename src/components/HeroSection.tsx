@@ -20,7 +20,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section id="home" className="min-h-screen bg-black text-white pt-16 relative overflow-hidden">
+    <section id="home" className="min-h-screen bg-black text-white pt-0 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-amber-900/10 via-black to-black"></div>
 
       <div className="absolute inset-0">
@@ -32,7 +32,7 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
+              <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
                 Modern Websites
                 <span className="block text-amber-500">Built to Grow Your Brand</span>
               </h1>
@@ -58,15 +58,15 @@ export default function HeroSection() {
 
             <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-800">
               <div>
-                <div className="text-3xl font-bold text-amber-500">Custom-Built</div>
+                <div className="text-2xl font-bold text-amber-500">Custom-Built</div>
                 <div className="text-sm text-gray-400">Websites tailored to your business</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-amber-500">SEO-Ready</div>
+                <div className="text-2xl font-bold text-amber-500">SEO-Ready</div>
                 <div className="text-sm text-gray-400">On-page optimization from day one</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-amber-500">Mobile-First</div>
+                <div className="text-2xl font-bold text-amber-500">Mobile-First</div>
                 <div className="text-sm text-gray-400">Designed to work on every screen</div>
               </div>
             </div>
@@ -103,7 +103,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-amber-600/20 rounded-lg blur-xl"></div>
+            {/*<div className="absolute -bottom-4 -right-4 w-32 h-32 bg-amber-600/20 rounded-lg blur-xl"></div>*/}
             <div className="absolute -top-4 -left-4 w-32 h-32 bg-amber-600/20 rounded-lg blur-xl"></div>
           </div>
         </div>

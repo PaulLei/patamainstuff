@@ -23,8 +23,8 @@ export default function Navigation() {
               className="h-10 w-10 object-contain"
             />
 
-            <span className="text-2xl font-bold text-white tracking-tight">
-              PATA<span className="text-amber-500"> Web Design & Branding</span>
+            <span className="text-3xl font-bold text-white tracking-tight">
+              PATA<span className="text-amber-500"> Digital Services</span>
             </span>
           </div>
 
