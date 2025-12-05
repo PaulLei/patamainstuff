@@ -59,7 +59,7 @@ export default function AboutSection() {
             </p>
 
             <p className="text-gray-300 text-lg leading-relaxed">
-              PATA Digital Services, run by Advik Tatavarthi and Paul Lei, helps
+              PATA Digital Services, run by Advik Tatavarthi and Paul Lei from Troy, Michigan, helps
               businesses move beyond generic templates. We blend thoughtful web
               design, clear copy, and modern development to create sites that
               feel tailored to your brand and intuitive for your audience.
