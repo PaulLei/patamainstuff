@@ -19,7 +19,7 @@ const projects: Project[] = [
     description:
       'Custom neurology site with service pages, news hub, and investor details.',
     image:
-      'https://neurologicsolutions.net/wp-content/uploads/2023/07/neurologic_solutions.horizontal.color_.white_.png',
+      'https://neurologicsolutions.net/wp-content/uploads/2023/07/neurologic_solutions.horizontal.white_-300x100.png',
     tags: ['WPBakery', 'Responsive Design', 'Healthcare Website'],
     link: 'https://neurologicsolutions.net/',
   },
