@@ -56,7 +56,7 @@ const projects: Project[] = [
   {
     id: 5,
     title: 'Harmony Initiative of Tech & Arts',
-    category: 'Non-profit Web Design',
+    category: 'In Progress',
     description:
       'Portfolio website for local non-profit',
     image: '/bl.png',
