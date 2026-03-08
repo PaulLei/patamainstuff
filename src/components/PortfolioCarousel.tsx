@@ -55,6 +55,16 @@ const projects: Project[] = [
   },
   {
     id: 5,
+    title: 'Harmony Initiative of Tech & Arts',
+    category: 'Non-profit Web Design',
+    description:
+      'Portfolio website for local non-profit',
+    image: '/bl.png',
+    tags: ['React.js', 'Vite', 'Non-profit Website'],
+    link: ',
+  },
+  {
+    id: 6,
     title: 'Troy High Performance Gym',
     category: 'In Progress',
     description:
