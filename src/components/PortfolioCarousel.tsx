@@ -61,7 +61,7 @@ const projects: Project[] = [
       'Portfolio website for local non-profit',
     image: '/bl.png',
     tags: ['React.js', 'Vite', 'Non-profit Website'],
-    link: ',
+    link: '',
   },
   {
     id: 6,
