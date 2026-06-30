@@ -12,7 +12,6 @@ const codeLines = [
 export default function HeroSection() {
   const [visibleLines, setVisibleLines] = useState<number>(0);
 
-  // Existing typewriter effect
   useEffect(() => {
     const timers = codeLines.map((line, index) =>
       setTimeout(() => setVisibleLines(index + 1), line.delay)
@@ -20,16 +19,13 @@ export default function HeroSection() {
     return () => timers.forEach(clearTimeout);
   }, []);
 
-  // NEW: scroll listener for parallax
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY || 0;
-      // store with px so calc() + translateY works properly
       document.documentElement.style.setProperty('--scroll', `${scrollY}px`);
     };
 
     window.addEventListener('scroll', handleScroll);
-    // initialize on mount so it works even if user is not at top
     handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
@@ -40,17 +36,16 @@ export default function HeroSection() {
       id="home"
       className="min-h-screen text-white pt-0 relative overflow-hidden bg-cover bg-center bg-no-repeat"
     >
-      {/* Parallax + soft blur background */}
+      {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat blur-md will-change-transform"
         style={{
           backgroundImage: "url('/background.jpg')",
-          // var(--scroll, 0px) has units; 0.2 controls parallax strength
           transform: 'translateY(calc(var(--scroll, 0px) * 0.2))',
         }}
       ></div>
 
-      {/* Dark overlay for contrast */}
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
@@ -58,14 +53,15 @@ export default function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-6xl lg:text-7xl font-bold leading-tight">
-                Modern Websites
-                <span className="block text-amber-500">Built to Grow Your Brand</span>
+                Web Design in Troy, Michigan
+                <span className="block text-amber-500">
+                  Built to Grow Your Business
+                </span>
               </h1>
 
               <p className="text-xl text-gray-300 leading-relaxed">
-                We craft fast, modern websites and clear brand identities for small businesses.
-                From design to launch, every project is built to look great, load quickly,
-                and help you win more clients.
+                PATA Digital Services builds fast, modern, SEO-ready websites for small businesses in Troy, Michigan and across Oakland County. 
+                Founded by Paul Lei and Advik Tatavarthi, we focus on clean design, strong branding, and high-performance websites that help local businesses stand out, attract more customers, and grow online.
               </p>
             </div>
 
@@ -92,12 +88,12 @@ export default function HeroSection() {
 
               <div>
                 <div className="text-2xl font-bold text-amber-500">SEO-Ready</div>
-                <div className="text-sm text-gray-400">On-page optimization from day one</div>
+                <div className="text-sm text-gray-400">Optimized for search from day one</div>
               </div>
 
               <div>
                 <div className="text-2xl font-bold text-amber-500">Mobile-First</div>
-                <div className="text-sm text-gray-400">Designed to work on every screen</div>
+                <div className="text-sm text-gray-400">Designed to work on every device</div>
               </div>
             </div>
           </div>
