@@ -69,7 +69,7 @@ const projects: Project[] = [
     category: 'In Progress',
     description:
       'Website for local marketing firm',
-    image: '/bl.png',
+    image: 'https://www.linkedin.com/company/greatdanemarketing',
     tags: ['React.js', 'Vite', 'Local Business'],
     link: 'https://www.mihita.org',
   },
