@@ -34,7 +34,7 @@ const projects: Project[] = [
     link: 'https://www.patadigitalservices.com/',
   },
   {
-    id: 3,
+    id: 5,
     title: 'ACE Chemistry Tutoring',
     category: 'Education Web Design',
     description:
@@ -54,17 +54,27 @@ const projects: Project[] = [
     link: 'https://www.coltsccg.com/',
   },
   {
-    id: 5,
+    id: 3,
     title: 'Harmony Initiative of Tech & Arts',
-    category: 'In Progress',
+    category: 'Non-profit Web Design',
     description:
       'Portfolio website for local non-profit',
     image: '/bl.png',
     tags: ['React.js', 'Vite', 'Non-profit Website'],
-    link: ',
+    link: 'https://www.mihita.org',
   },
   {
     id: 6,
+    title: 'Great Dane Marketing and Communications Inc.',
+    category: 'In Progress',
+    description:
+      'Website for local marketing firm',
+    image: '/bl.png',
+    tags: ['React.js', 'Vite', 'Local Business'],
+    link: 'https://www.mihita.org',
+  },
+  {
+    id: 7,
     title: 'Troy High Performance Gym',
     category: 'In Progress',
     description:
