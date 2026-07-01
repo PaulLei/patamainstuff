@@ -71,7 +71,7 @@ const projects: Project[] = [
       'Website for local marketing firm',
     image: '/greatdanemarketing_logo.jpg',
     tags: ['React.js', 'Vite', 'Local Business'],
-    link: 'https://www.mihita.org',
+    link: '',
   },
   {
     id: 7,
