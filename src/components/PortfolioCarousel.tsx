@@ -19,7 +19,7 @@ const projects: Project[] = [
     description:
       'Custom neurology site with service pages, news hub, and investor details.',
     image:
-      'https://neurologicsolutions.net/wp-content/uploads/2023/07/neurologic_solutions.horizontal.white_-300x100.png',
+      'https://www.neurologicsolutions.net/neurologic_solutions.horizontal.color_.white_.png',
     tags: ['WPBakery', 'Responsive Design', 'Healthcare Website'],
     link: 'https://neurologicsolutions.net/',
   },
@@ -42,16 +42,6 @@ const projects: Project[] = [
     image: 'https://www.acechemistrytutoring.academy/acelogo.jpeg',
     tags: ['React.js', 'Vite', 'Accessibility'],
     link: 'https://www.acechemistrytutoring.academy/',
-  },
-  {
-    id: 4,
-    title: 'Colts Consulting Services',
-    category: 'Business Web Design',
-    description:
-      'Business site featuring consulting services, value, and client outcomes.',
-    image: 'https://www.coltsccg.com/CCG%20Logo.png',
-    tags: ['React.js', 'Vite', 'Small Business Website'],
-    link: 'https://www.coltsccg.com/',
   },
   {
     id: 3,
